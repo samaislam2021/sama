@@ -64,6 +64,8 @@ window.addEventListener('scroll', () => {
 
       const name = document.getElementById("name").value;
       const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+      
 
       if(name === "" || email === ""){
         alert("Please fill all fields!");
