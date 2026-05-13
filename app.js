@@ -20,7 +20,7 @@ form.addEventListener("submit", async (e) => {
 
     const data = await response.json();
 
-    alert("Submitted Successfully!");
+    alert("🎉 Message Sent Successfully!");
     console.log(data);
 
   } catch (error) {
