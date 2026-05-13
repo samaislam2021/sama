@@ -161,23 +161,25 @@ Currently, I am learning HTML, CSS, and JavaScript to improve my skills and buil
 
     <!-- Contact Section -->
 
-    <section id="contact" class="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
+    <section class="contact" id="contact">
+    <h2 data-aos="fade-up">Contact Me</h2>
 
-        <form action="#">
-            <div class="input-box">
-                <input type="text" name="name" placeholder="Full Name">
-                <input type="email" name="email" placeholder="Email Address">
-            </div>
-            <div class="input-box">
-                <input type="number" name="number" placeholder="Phone Number">
-                <input type="text" name="subject" placeholder="Email Subject">
-            </div>
+    <form id="contactForm" data-aos="zoom-in">
 
-            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>
-    </section>
+      <input type="text" id="name" placeholder="Your Name" required>
+
+      <input type="email" id="email" placeholder="Your Email" required>
+
+      <textarea rows="6" id="message" placeholder="Your Message"></textarea>
+
+      <button class="btn" type="submit">
+        Send Message
+      </button>
+
+    </form>
+
+    
+  </section>
 
 
     <!-- Footer Section Start Here -->

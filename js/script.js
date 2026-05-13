@@ -52,3 +52,28 @@ closeBtn.addEventListener('click', closeNav);
 window.addEventListener('scroll', () => {
     document.querySelector('nav').classList.toggle('window-scroll', window.scrollY>100);
 })
+
+/* =========================
+       CONTACT FORM VALIDATION
+    ==========================*/
+    const form = document.getElementById("contactForm");
+
+    form.addEventListener("submit", function(e){
+
+      e.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+
+      if(name === "" || email === ""){
+        alert("Please fill all fields!");
+      }
+      else{
+        alert("🎉 Message Sent Successfully!");
+        form.reset();
+
+        // Confetti Effect
+        confetti();
+      }
+
+    });
